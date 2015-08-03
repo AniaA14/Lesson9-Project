@@ -28,6 +28,15 @@
   <option value="movie2">Breakfest at Tiffany's</option>
   <option value="movie3">Pineapple Express</option>
   <option value="movie4">Ted 2</option>
+  <option value="movie5">Sister Act</option>
+  <option value="movie6">The Girl with the Dragon Tattoo</option>   
+  <option value="movie7">Gone Girl</option>
+  <option value="movie8">Red 2</option>
+   <option value="movie9">Suicide Squad</option>
+    
+ 
+    
+    
   </select>
 </form>
 
@@ -52,9 +61,9 @@
         <a href="#" class="list-group-item">
             <h3 class="list-group-item-heading">Plot:</h3>
             <p class="list-group-item-text lead text-primary text-center" id="Plot">  </p>
-	</a>
+	    </a>
         
-
+       
         
     </div>
 </div> 
@@ -79,9 +88,11 @@
                      $('#Rated').html(json.rated);
                      $('#Actors').html(json.actors);
                      $('#Plot').html(json.plot);
+                     
                     // $('#Released').html(json.Poster);
                      $('#Poster').attr({
                          src: movieURL
+                       
                      });
                 })
                 .fail(function() {
